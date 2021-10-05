@@ -1,11 +1,16 @@
 .header {
-    padding: 10px;
+    /* padding: 10px; */
     text-align: center;
     /* background: #1abc9c; */
     /* color: white; */
-    line-height: 0.2;
+    line-height: 1;
     font-size: 30px;
     font-family: "Times New Roman", Times, serif;
+}
+
+#subtitle {
+  text-align: start;
+  margin-left: 3%;
 }
 
 /* Three image containers (use 25% for four, and 50% for two, etc) */
@@ -31,10 +36,39 @@ body {
     margin-left: 25%;
     margin-right: 25%;
     background: #22272e;
-    text-align: start;
-    font-size: 20px;
     color: #adbac7;
 }
+
+.abstract {
+  background-color: #2d333b;
+  border: 1px solid;
+  border-color: #444c56;
+  /* color: #768390; */
+  color: #7f8c99;
+  text-align: start;
+  padding: 20px;
+  border-radius: 6px;
+}
+
+.abstract myBold {
+  color: #cdd9e5;
+  font-weight: 550;
+}
+
+.content {
+  text-align: start;
+  font-size: 18px;
+}
+
+img {
+  float: right;
+  margin: 10px;
+}
+
+p {
+  text-align: justify;
+}
+
 
 #box-1 {
     text-align: center;

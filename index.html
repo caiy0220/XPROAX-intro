@@ -7,22 +7,50 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <div class="header">
+    <!-- <div class="header">
         <h1>XPROAX</h1>
         <h5><small>local eXplanations for text classification with PROgressive neighborhood ApproXimation</small></h5>
-    </div>    
+    </div>     -->
+    <div class="header">
+        <div style="display: inline-block;">
+            <h1>XPROAX</h1>
+        </div>
+        <div id="subtitle" style="display: inline-block;">
+            <!-- <h5><small>local eXplanations for text classification with PROgressive neighborhood ApproXimation</small></h5> -->
+            <h4><small>local eXplanations for text classification with <br> PROgressive neighborhood ApproXimation</small></h4>
+        </div>
+    </div>
 
-    <p>XPROAX falls into the category of local explanation method and is specified for text classifiers. </p>
-    <!-- <p>Describe the basic idea of XPROAX.</p> -->
-    <p>XPROAX provides more detailed explanations than other explanation methods, which consist of four components: 
-        (i) intrinsic words, (ii) extrinsic words, (iii) factuals, (iv) counterfactuals. </p>
-    <p>Both qualitative and quantitative evaluations show the effectiveness and stability of XPROAX in comparison to state-of-the-art methods.</p>
-    <p class="aligncenter">
+    <div class="abstract">
+        <myBold>Abstract</myBold>&emsp;The importance of the neighborhood for training a local surrogate model to approximate the local decision boundary of a black box classifier has been already highlighted in the literature. Several attempts have been made to construct a better neighborhood for high dimensional data, like texts, by using generative autoencoders. However, existing approaches mainly generate neighbors by selecting purely at random from the latent space and struggle under the curse of dimensionality to learn a good local decision boundary. To overcome this problem, we propose a progressive approximation of the neighborhood using counterfactual instances as initial landmarks and a careful 2-stage sampling approach to refine counterfactuals and generate factuals in the neighborhood of the input instance to be explained. Our work focuses on textual data and our explanations consist of both word-level explanations from the original instance (intrinsic) and the neighborhood (extrinsic) and factual- and counterfactual-instances discovered during the neighborhood generation process that further reveal the effect of altering certain parts in the input text. Our experiments on real-world datasets demonstrate that our method outperforms the competitors in terms of usefulness and stability (for the qualitative part) and completeness, compactness and correctness (for the quantitative part).
+    </div>
+
+    <!-- <p>XPROAX falls into the category of local explanation method and is specified for text classifiers. </p> -->
+    <div class="content">
+        <p>
+            XPROAX is a local explanation method specified for text classifiers. Benefit from the more careful construction of neighborhoods, XPROAX provides high-quality explanations with more details for understanding black-box decisions. The explanation consists of four components: (i) intrinsic words, (ii) extrinsic words, (iii) factuals, (iv) counterfactuals.
+        </p>
+        <p>
+            One major challenge of explaining text classifiers is neighborhood construction. The frequently used word-dropping method can easily lead to incomplete sentences. To address this challenge, the basic idea behind XPROAX is to deploy a generative model for generating better (semantically meaningful and grammatically correct) neighboring texts.
+            Furthermore, we propose a two-staged progressive neighborhood approximation method in this paper. It helps constraint the neighborhood of a given input based on the local manifold and improves the quality of constructed neighborhoods.
+        </p>
+
+        <img src="img/structure.svg" width="90%" style="float: none; display: block; margin-left: auto; margin-right: auto;">
+
+        <p>
+            In this paper, we perform qualitative and quantitative evaluations on XPROAX and compare the proposed method with state-of-the-art local explanation methods.
+            Experimental results show that our method outperforms the competitors .
+            The experiments also illustrates the quality of neighborhoods have a huge impact on final explanations.
+            More specifically, the comparison between XPROAX and XSPELLS shows that the careful construction of the neighborhood overcomes the weakness of random sampling in a latent space.
+            <br>(Please refer to the paper for more details)
+        </p>
+        <!-- <p>Work in Progress ...</p> -->
+    </div>
+
+    <!-- <p class="aligncenter">
         <img src="img/input1.png" alt="Qualitative evaluation input 1" width="80%">
         <img src="img/input2.png" alt="Qualitative evaluation input 2" width="80%">
-    </p>
-    
-    <p>Work in Progress ...</p>
+    </p> -->
 
     <div id="box-1" class="box">
         <a href="https://github.com/caiy0220/XPROAX" class="button">
