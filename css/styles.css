@@ -30,10 +30,10 @@
 body {
     margin-left: 25%;
     margin-right: 25%;
-    background: #162d50;
+    background: #22272e;
     text-align: start;
     font-size: 20px;
-    color: #f0f0f0;
+    color: #adbac7;
 }
 
 #box-1 {
@@ -50,7 +50,7 @@ input[type="button"] {
   justify-content: space-around;
   height: 38px;
   padding: 0 30px;
-  color: #f0f0f0;
+  color: #adbac7;
   text-align: center;
   vertical-align: middle;
   font-size: 11px;
@@ -60,9 +60,9 @@ input[type="button"] {
   text-transform: uppercase;
   text-decoration: none;
   white-space: nowrap;
-  background-color: #2f5597; /*transparent*/
+  background-color: #373e47; /*transparent*/
   border-radius: 6px;
-  border: 2px solid #bbb;
+  border: 2px solid #454d56ff;
   cursor: pointer;
   box-sizing: border-box; }
 .button:hover,
