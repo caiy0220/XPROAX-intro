@@ -1,5 +1,5 @@
 # XPROAX-intro
-https://caiy0220.github.io/XPROAX-intro/
+https://www.caiy.org/XPROAX-intro/
 
 # Contact
 cai@l3s.de
