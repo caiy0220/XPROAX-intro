@@ -2,4 +2,4 @@
 https://www.caiy.org/XPROAX-intro/
 
 # Contact
-cai@l3s.de
+yi.cai@fu-berlin.de
